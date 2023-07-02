@@ -1,0 +1,189 @@
+
+ h1,
+h2,
+h1-5
+{
+  font-family: "script", cursive;
+}
+
+
+header {
+  background: #fae862;
+  color: #000000;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 42px;
+  margin-top: 0;
+}
+
+
+header nav ul {
+  padding: 0;
+}
+
+header nav li {
+  display: inline-block;
+}
+
+header nav li a {
+  color: #000000;
+  margin: 15px;
+  padding: 10px;
+  text-decoration: none; 
+}
+
+header nav li a:hover {
+  color: #000000;
+  border-bottom: 2px solid #ffd23f;
+}
+
+
+h1-5{
+  text-align: center;
+}
+
+  main {
+  margin: 3rem auto;
+
+  width: 80%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 1rem 3rem;
+} 
+
+  main a { 
+  text-align: right;
+  color: #94a675;
+  text-decoration: firebrick;
+}   
+
+
+
+
+
+
+body{
+  background-color: #56dee8;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color: #040f16;
+  font-family: "Dancing Script", cursive;
+  font-size: 12px;
+}
+
+
+
+
+.splash h2,h3,h1-5 {
+  color: #000000;
+  font-size: 5rem;
+  margin: auto;
+  padding: 2% 0;
+  ;
+  
+}
+
+
+main {
+  margin: 3rem auto;
+
+  width: 70%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 3rem;
+}
+
+article {
+  line-height: 2rem;
+}
+
+img {
+  border-radius: 15px;
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 50%;
+  width: 50%;
+}
+
+aside {
+  padding-bottom: 10px;
+}
+
+aside a {
+  color: #000000;
+  text-decoration: none;
+}
+
+aside a:hover {
+  color: #fff755;
+}
+
+#cart{
+
+}
+
+footer {
+  background: #000000;
+  color: #74f3e9;
+  padding: 30px 15% 20px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+footer h4 {
+  border-bottom: 1px solid #feea62;
+  margin: 0;
+  max-width: 250px;
+  padding-bottom: 5px;
+}
+
+footer ul {
+  color: #56dee8;
+  list-style: square;
+  padding-left: 1rem;
+}
+
+footer ul li {
+  margin: 1rem 0;
+}
+
+footer a {
+  color: #50f7f7;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ececec;
+}
+
+/* Media queries */
+ @media (max-width: 1279px) {
+  .splash {
+    display: none;
+  }
+  main {
+    width: 90%;
+  }
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+}
+  } 
+
+   @media (max-width: 768px) {
+    header {
+      grid-template-columns: repeat(1, 1fr);
+} 
+main {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 50px 0px;
+}
+  } 
