@@ -26,7 +26,7 @@ const FormForNewItem = document.querySelector("form")
   FormForNewItem.addEventListener("submit", (event) =>{
    console.log("submitting form !: ", event.target[0].value)
    div.append(event.target[0].value ,"  ")
-    
+   incart = !incart
     event.preventDefault()
    
   })
@@ -34,7 +34,7 @@ const FormForNewItem = document.querySelector("form")
   const removeItemFromForm = document.querySelector("alert-button")
   removeItemFromForm.addEventListener("click", (event) =>{
    FormForNewItem.remove(event.target[0].value)
-
+    incart = incart
     event.preventDefault()
   })
 
