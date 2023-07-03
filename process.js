@@ -2,6 +2,9 @@ const title = document.querySelector("h1");
 
 const div = document.querySelector("div")
 
+const form = document.querySelector("cart")
+
+
 let incart = false
 
 
@@ -19,14 +22,22 @@ h3ForAddToCart.addEventListener("click" , (event)=>{
 })
 
 
-const FormForNewItem = document.querySelector("button")
-  FormForNewItem.addEventListener("submit", (event)=>{
-   
-    console.log("submitting form !: ", event.target[0].value)
-
+const FormForNewItem = document.querySelector("form")
+  FormForNewItem.addEventListener("submit", (event) =>{
+   console.log("submitting form !: ", event.target[0].value)
+   div.append(event.target[0].value ,"  ")
+    
     event.preventDefault()
    
   })
+
+  const removeItemFromForm = document.querySelector("alert-button")
+  removeItemFromForm.addEventListener("click", (event) =>{
+   FormForNewItem.remove(event.target[0].value)
+
+    event.preventDefault()
+  })
+
 
   
  

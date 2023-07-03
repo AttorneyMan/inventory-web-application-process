@@ -1,5 +1,5 @@
 
- h1,
+h1,
 h2,
 h1-5,
 h6
@@ -42,9 +42,7 @@ header nav li a:hover {
 }
 
 
-
-
-  main {
+main {
   margin: 3rem auto;
 
   width: 80%;
@@ -61,10 +59,6 @@ header nav li a:hover {
 }   
 
 
-
-
-
-
 body{
   background-color: #56dee8;
   margin: 0;
@@ -78,9 +72,7 @@ html {
 }
 
 
-
-
-.splash h2,h3,h1-5 {
+.splash h2,h3,h1-5,h6 {
   color: #000000;
   font-size: 5rem;
   margin: auto;
@@ -125,10 +117,9 @@ aside a:hover {
   color: #fff755;
 }
 
-section h6{
+ h6 {
   text-align: center;
 }
-
 
 
 footer {
