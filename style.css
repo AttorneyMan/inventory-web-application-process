@@ -1,7 +1,8 @@
 
  h1,
 h2,
-h1-5
+h1-5,
+h6
 {
   font-family: "script", cursive;
 }
@@ -41,9 +42,7 @@ header nav li a:hover {
 }
 
 
-h1-5{
-  text-align: center;
-}
+
 
   main {
   margin: 3rem auto;
@@ -126,9 +125,11 @@ aside a:hover {
   color: #fff755;
 }
 
-#cart{
-
+section h6{
+  text-align: center;
 }
+
+
 
 footer {
   background: #000000;
@@ -165,25 +166,13 @@ footer a:hover {
   color: #ececec;
 }
 
-/* Media queries */
- @media (max-width: 1279px) {
-  .splash {
-    display: none;
-  }
-  main {
-    width: 90%;
-  }
-  footer {
-    grid-template-columns: repeat(2, 1fr);
-}
-  } 
 
    @media (max-width: 768px) {
     header {
       grid-template-columns: repeat(1, 1fr);
 } 
 main {
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(1, 2fr);
   gap: 50px 0px;
 }
-  } 
+  }   
