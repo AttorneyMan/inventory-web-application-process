@@ -27,7 +27,7 @@ const FormForNewItem = document.querySelector("form")
    console.log("submitting form !: ", event.target[0].value)
    div.append(event.target[0].value ,"  ")
    incart = !incart
-    event.preventDefault()
+   event.preventDefault()
    
   })
 
